@@ -1,0 +1,16 @@
+{
+  "name": "gostack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "gusflopes <gusflopes86@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "test": "yarn workspace @gostack/challenge02 test"
+  },
+  "workspaces": {
+    "packages": [
+      "challenge02"
+    ]
+  }
+}
