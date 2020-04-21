@@ -8,7 +8,17 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-const repositories = [];
+const firstId = uuid()
+
+const repositories = [
+  // {
+  //   id: firstId,
+  //   title: 'Testando',
+  //   url: 'https://github.com/gusflopes/some-repo',
+  //   techs: ['Node.js', 'ReactJs'],
+  //   likes: 0
+  // }
+];
 
 app.get("/repositories", (request, response) => {
   return response.status(200).json(repositories)
